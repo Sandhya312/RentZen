@@ -1,0 +1,16 @@
+
+
+
+#carouselExampleAutoplaying{
+
+    display: flex;
+    justify-content: center;
+    margin: 2%;
+    padding: 2%;
+}
+
+.carousel-inner {
+  
+    width: 80%;
+   
+}

@@ -1,0 +1,56 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ .container-fluid{
+
+    width: auto !important;
+
+}
+
+.navbar-nav{
+    align-items: center;
+}
+.dropdown-menu.show{
+    width: 77rem !important;
+    height: auto;
+    display: grid !important;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    justify-items: center;
+    align-items: center;
+    grid-template-rows: repeat(2,1fr);
+    gap: 10px;
+}
+
+.select_city>li{
+    cursor: pointer;
+}
+
+
+.cartBtn{
+    width: 5rem !important;
+}
+
+.cartBtn>p{
+    margin:0 !important;
+}
+
+.nav-item> button {
+    padding: 9% 0;
+}
+
+.cart-nav{
+    margin: 0 2%;
+}
+
+.signupBtn{
+    padding: 9% 8% !important;
+    background-color: #DB3327;
+    outline: none;
+    border: none;
+    width: 8rem;
+    height: 3rem;
+}

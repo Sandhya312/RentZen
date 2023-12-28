@@ -1,0 +1,57 @@
+
+.rental_steps_btns{
+    border: 1.5px solid #BE2808;
+    border-radius: 10rem;
+    outline: none;
+    width: 30rem;
+
+}
+
+.post_rent_btn{
+    border-radius: 10rem;
+
+    background-color: #BE2808;
+    border: 1px solid #e0e0e0;
+    color: #000;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 400;
+    height: 3rem;
+    line-height: 36px;
+    margin: 0 10px 0 0;
+    padding: 0 16px;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    width: 10rem;
+    outline: none;
+    transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+}
+
+
+.buy_rent_btn{
+    background-color: #BE2808;
+    border: 1px solid #e0e0e0;
+    border-radius: 10rem;
+    color: #000;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 400;
+    height: 3rem;
+    line-height: 36px;
+    margin: 0 10px 0 0;
+    padding: 0 16px;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    width: 10rem;
+
+    outline: none;
+    transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+}
