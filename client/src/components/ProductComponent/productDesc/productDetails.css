@@ -1,0 +1,248 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p{
+    margin-bottom: 0 !important;
+}
+.productDetails{
+
+}
+
+.product_variants{
+    border-radius: 4px;
+    border: 1px solid #e2eaf0;
+    background: #fff;
+    padding: 15px 0 15px 15px;
+    margin-bottom: 10px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.product_variants .product_clr_mat_box .color_box{
+    border: 1px solid #1dbdc0!important;
+    color: #1dbdc0!important;
+    font-weight: 600;
+    padding: 2%;
+    width: 80px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 5px;
+    background: #fff;
+    font-size: 14px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+
+.color_box span{
+    display: block;
+    margin-right: 2%;
+    width: 15px;
+    height: 15px;
+    border-radius: 8px;
+}
+
+
+
+.product_variants>div>p span{
+    color: #787878;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.tenure_body{
+    border: 1px solid #e2eaf0;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    background-color: #fff;
+}
+
+.tenure_slider{
+    padding:5%;
+    border-bottom: 1px solid #e2eaf0;
+}
+
+
+
+.tenure_heading{
+    font-size: 14px;
+    font-weight: 600;
+    color: #313131;
+}
+
+.tenure_heading .bxs-info-circle{
+    cursor: pointer;
+}
+
+.tenure_rate_deposite{
+    display: flex;
+    border-bottom: 1px solid #e2eaf0;
+    text-align: center;
+}
+
+.tenure_rate{
+    border-right: 1px solid #e6e6e6;
+    flex: 1 0 50%;
+    padding: 15px 17px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    
+}
+
+.tenure_rate>p, .tenure_deposite>p{
+    font-weight: 600;
+    color: #313131;
+    text-decoration: none;
+    line-height: 1.5;
+}
+
+.tenure_rate span{
+    color: #828080;
+}
+
+.tenure_rate_deposite small{
+    color: #717171;
+    text-decoration: none;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.tenure_deposite{
+    flex: 1 0 50%;
+    padding: 15px 17px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rent_features{
+    font-size: 10px;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 10px 14px;
+    text-align: center;
+    border-top: 1px solid #e2eaf0;
+    border-top: 0;
+    border-radius: 0 0 4px 4px;
+}
+
+.feature_free_relocation,.feature_refundable{
+    display: flex;
+    align-items: center;
+    flex: 1 0 50%;
+    font-size: 15px;
+    color: #787878;
+}
+
+.bxs-check-circle{
+   margin-right: 5px;
+}
+
+.product_rent_btn{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.rent_btn{
+    background: #dc3226;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+    height: 50px;
+    border: none;
+    margin: 10px auto;
+    outline: none!important;
+    padding: 15px 10px;
+    transition: all .1s linear;
+    width: 100%;
+}
+
+.product_coupon{
+    padding: 2%;
+    margin: 25px 15px;
+    background: #f5f7fa;
+}
+
+.product_coupon .coupon_heading{
+    font-size: 14px;
+    font-weight: 600;
+    color: #313131;
+    padding: 15px 0 0 15px;
+    
+}
+
+.coupon_body{
+        display: flex;
+    margin-top: 0 10px;
+    padding: 10px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #717171;
+    border-radius: 2px;
+    border: 1.1px dashed #bfcfdc;
+    background-color: #fff;
+
+}
+
+.form-select:focus {
+
+    border-color:none;
+    outline: 0;
+    box-shadow: none;
+}
+
+
+.product_features{
+   background-color: #f5f7fa;
+    padding: 10px;
+    color: #313131;
+    border-radius: 10px;
+}
+
+.product_features .features_heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    border-radius: 10px;
+    align-items:flex-start;
+}
+
+.features_heading h3{
+    margin: 0!important;
+    font-weight: 700;
+}
+
+.features_heading p{
+    font-size: 14px;
+    margin-bottom: 0;
+    margin-top: 5px;
+    color: #787878;
+}
+
+
+
+.product-varient__details{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 2%;
+    padding-top: 12px;
+}
+
+.product-varient__details .product-varient__details__heading{
+    display: flex;
+    align-items: center;
+}

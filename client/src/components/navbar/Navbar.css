@@ -25,6 +25,15 @@
     gap: 10px;
 }
 
+.btn:hover , .btn:active , .btn:focus {
+    background-color: #FABE00;
+    box-shadow: none;
+}
+
+.btn:visited,.btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active{
+    background-color: #DB3327;
+}
+
 .select_city>li{
     cursor: pointer;
 }

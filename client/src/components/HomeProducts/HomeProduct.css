@@ -1,7 +1,21 @@
+
+
+.home_product_parent{
+    width: auto;
+    padding: 2%;
+    display: flex;
+    /* margin-left: 10rem; */
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFF8E0;
+    text-align: left;
+}
+
 .home_product_div.row { 
     overflow-x: auto; 
     white-space: nowrap; 
     flex-wrap: nowrap;
+    width: 80%;
 } 
   
 .horizontal-scrollable > .row > .col-xs-4 { 

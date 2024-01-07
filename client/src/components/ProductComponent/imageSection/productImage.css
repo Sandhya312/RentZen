@@ -1,0 +1,9 @@
+
+.productImage{
+    background-color: red;
+}
+
+.productImage img{
+    max-height: 500px;
+
+}

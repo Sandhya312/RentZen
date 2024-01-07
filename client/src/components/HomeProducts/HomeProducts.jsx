@@ -83,7 +83,7 @@ const HomeProducts = () => {
     const [Products,setProducts] = useState(productsItems);
 
     return (
-       <div >
+       <div  className='home_product_parent'>
            <h3>You&apos;ll love to take these home</h3>
 
            <div className='home_product_div d-flex row horizontal-scrollable'>

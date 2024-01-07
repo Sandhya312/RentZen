@@ -1,0 +1,17 @@
+.lowestPrice_div,.doorstep_delivery_div,.payment_protected_div{
+    display: flex;
+    align-items: center;
+    width: auto;
+    
+}
+
+.lowestPrice_div>.bx,.doorstep_delivery_div>.bx,.payment_protected_div>.bx{
+    font-size: 4rem;
+    color: #FABE00;
+}
+
+.lowestPrice_div>p,.doorstep_delivery_div>p,.payment_protected_div>p{
+    font-size: 2rem;
+    font-weight: 700;
+    color: #DC3226;
+}
