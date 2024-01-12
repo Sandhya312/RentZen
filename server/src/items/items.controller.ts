@@ -1,5 +1,17 @@
-import { Body, Controller, Get, HttpCode, Post } from '@nestjs/common';
+import {
+  Body,
+  Controller,
+  Get,
+  HttpCode,
+  Post,
+  Put,
+  Query,
+  UsePipes,
+  ValidationPipe,
+} from '@nestjs/common';
 import { ItemsService } from './items.service';
+import { CreateItemDto } from './dto/createItemDTO';
+import { UpdateItemDto } from './dto/updateItemDTO';
 
 @Controller('items')
 export class ItemsController {
@@ -13,7 +25,18 @@ export class ItemsController {
 
   @Post('create')
   @HttpCode(201)
-  async createItem(@Body() itemData): Promise<any> {
-    return this.itemService.createItem(itemData);
+  @UsePipes(ValidationPipe)
+  async createItem(@Body() createItemDto: CreateItemDto): Promise<string> {
+    return this.itemService.createItem(createItemDto);
+  }
+
+  @Put('update')
+  @HttpCode(200)
+  @UsePipes(ValidationPipe)
+  async updateItem(
+    @Body() updateItem: UpdateItemDto,
+    @Query('id') itemID: string,
+  ): Promise<string> {
+    return this.itemService.updateItem(itemID, updateItem);
   }
 }
