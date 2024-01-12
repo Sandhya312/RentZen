@@ -9,6 +9,48 @@ import {
 } from 'class-validator';
 import { Type } from 'class-transformer';
 
+export class DescDto {
+  @IsArray()
+  @ArrayMinSize(1)
+  featureAndSpec: string[];
+
+  @IsArray()
+  @ArrayMinSize(0)
+  safetyAndUsage: string[];
+
+  @IsString()
+  @IsNotEmpty()
+  sizeAndDimensions: string;
+
+  @IsString()
+  @IsNotEmpty()
+  color: string;
+
+  @IsString()
+  @IsNotEmpty()
+  material: string;
+}
+
+export class TenureDurationDto {
+  @IsNumber()
+  @IsNotEmpty()
+  minDuration: number;
+
+  @IsNumber()
+  @IsNotEmpty()
+  maxDuration: number;
+}
+
+export class CostDto {
+  @IsString()
+  @IsNotEmpty()
+  time: string;
+
+  @IsNumber()
+  @IsNotEmpty()
+  value: number;
+}
+
 export class CreateItemDto {
   @IsString()
   @IsNotEmpty()
@@ -37,46 +79,4 @@ export class CreateItemDto {
   @ValidateNested()
   @Type(() => CostDto)
   cost: CostDto;
-}
-
-export class DescDto {
-  @IsArray()
-  @ArrayMinSize(1)
-  featureAndSpec: string[];
-
-  @IsArray()
-  @ArrayMinSize(0)
-  safetyAndUsage: string[];
-
-  @IsString()
-  @IsNotEmpty()
-  sizeAndDimensions: string;
-
-  @IsString()
-  @IsNotEmpty()
-  color: string;
-
-  @IsString()
-  @IsNotEmpty()
-  material: string;
-}
-
-export class TenureDurationDto {
-  @IsString()
-  @IsNotEmpty()
-  minDuration: string;
-
-  @IsString()
-  @IsNotEmpty()
-  maxDuration: string;
-}
-
-export class CostDto {
-  @IsString()
-  @IsNotEmpty()
-  time: string;
-
-  @IsNumber()
-  @IsNotEmpty()
-  value: number;
 }
