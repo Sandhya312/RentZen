@@ -17,10 +17,3 @@
     padding-top: 18px; 
 } 
   
-.col-xs-4:nth-child(2n+1) { 
-    background: green; 
-} 
-  
-.col-xs-4:nth-child(2n+2) { 
-    background: black; 
-} 

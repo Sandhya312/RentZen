@@ -1,6 +1,7 @@
 
 import PropTypes from 'prop-types';
 import './productDetails.css';
+import { Link } from 'react-router-dom';
 
 
 const ProductDetails = ({ product }) => {       
@@ -66,10 +67,13 @@ const ProductDetails = ({ product }) => {
             </div>
 
             <div className="product_rent_btn">
-                <button className="rent_btn">
+              <Link to={'../cart'}>
+              <button className="rent_btn">
                 <i className='bx bxs-cart' ></i>   Click here
                 </button>
 
+              </Link>
+ 
                 <small><i className='bx bxs-truck' ></i>Deleivery in 3-4 days</small>
             </div>
 

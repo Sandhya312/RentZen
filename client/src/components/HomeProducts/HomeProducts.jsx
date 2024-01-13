@@ -1,7 +1,7 @@
 
 
 import { useState } from 'react';
-
+import { Link } from 'react-router-dom';
 import './HomeProduct.css';
 
 import bed from '../../assets/bed.jpg';
@@ -98,8 +98,7 @@ const HomeProducts = () => {
                       <h5 className="card-title">Card title</h5>
                       <h6 className="card-subtitle mb-2 text-body-secondary">{item.name}</h6>
                       <p className="card-text">{item.Rent}</p>
-                      <a href="#" className="card-link">Card link</a>
-                      <a href="#" className="card-link">Another link</a>
+                      <Link className='card-link' to={`products/${index}`}>More Info</Link>
                     </div>
                   </div>
                 )

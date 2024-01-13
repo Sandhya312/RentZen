@@ -1,0 +1,17 @@
+
+.cart-btn {
+    outline: none;
+    border: none;
+    height: 2.5rem;
+    width: 3.125rem;
+    background-color: #DB3327;
+}
+
+.checkout-btn{
+    width: 8rem;
+    height: 3rem;
+}
+
+.quantity_inpt{
+    width: 3rem;
+}

@@ -1,16 +1,18 @@
+import { Link, NavLink } from "react-router-dom";
 import "./Navbar.css";
 
 const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary sticky-top">
       <div className="container-fluid">
-        <a className="navbar-brand" href="/">
+    
+        <NavLink className="navbar-brand" to="/">
           R RentZen
-        </a>
+        </NavLink>
 
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-            <li className="nav-item dropdown">
+            {/* <li className="nav-item dropdown">
               <a
                 className="nav-link dropdown-toggle"
                 href="#"
@@ -61,7 +63,7 @@ const Navbar = () => {
                   <p>Pune</p>
                 </li>
               </ul>
-            </li>
+            </li> */}
             <li
               className="nav-item"
               style={{
@@ -87,7 +89,8 @@ const Navbar = () => {
             </li>
 
             <li className="nav-item cart-nav">
-              <button className="btn btn-sm w-100 d-flex align-items-center justify-content-center cartBtn">
+            <Link to={'/cart'}>
+            <button className="btn btn-sm w-100 d-flex align-items-center justify-content-center cartBtn">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -101,11 +104,15 @@ const Navbar = () => {
                 </svg>
                 <p>Cart</p>
               </button>
+            </Link>
             </li>
             <li className="nav-item">
-              <button className=" signupBtn btn btn-primary btn-sm">
+            <NavLink to="/signup">
+            <button className=" signupBtn btn btn-primary btn-sm">
                 Signup/Login
               </button>
+            </NavLink>
+              
             </li>
           </ul>
         </div>

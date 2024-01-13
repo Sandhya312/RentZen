@@ -3,10 +3,35 @@
 
 import './GuidSteps.css';
 import HorizontalScroll from '../horizontalScroll/Horizontalscroll';
+import step1 from '../../assets/step1.png';
+import step2 from '../../assets/step2.png';
+import step3 from '../../assets/step3.png';
+import step4 from '../../assets/step4.png';
 import { useState } from 'react';
 
-const postRentSteps = ['postStep1','postStep2','postStep3'];
-const buyRentSteps = ['buyStep1','buyStep2','buyStep3'];
+const postRentSteps = [{
+    id:1,
+    title:'Post what you want to rent',
+    image:step1
+},
+{
+    id:2,
+    title:'Pack and keep your items ready for pick up',
+    image:step2
+},
+{
+    id:3,
+    title:'We pick up, quality check, list, ship your items. You earn!',
+    image:step3
+},
+{
+    id:4,
+    title:'You receive earnings directly in FreeUp wallet, UPI or Bank Account!',
+    image:step4
+} 
+
+];
+// const buyRentSteps = ['buyStep1','buyStep2','buyStep3'];
 
 
 
@@ -28,9 +53,9 @@ const GuidSteps = () => {
             <button className='btn post_rent_btn'
              onClick={()=>{stepsFuncton(postRentSteps)}}
             >Post to Rent</button>
-            <button className='btn buy_rent_btn'
+            {/* <button className='btn buy_rent_btn'
              onClick={()=>{stepsFuncton(buyRentSteps)}}
-            >Buy on Rent</button>
+            >Buy on Rent</button> */}
              
         </div>
 

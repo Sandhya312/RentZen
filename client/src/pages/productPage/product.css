@@ -1,11 +1,6 @@
 
-.product{
-}
 
 .product-container{
     grid-template-columns: 2fr 1fr;
 }
 
-.product-container .left{
-    
-}

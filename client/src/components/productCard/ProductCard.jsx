@@ -1,6 +1,7 @@
 import PropTypes from "prop-types";
 
 import "./ProductCard.css";
+import { Link } from "react-router-dom";
 
 const ProductCard = ({ product }) => {
   const { title, price, image } = product;
@@ -25,15 +26,21 @@ const ProductCard = ({ product }) => {
         <p>4-6 days</p>
       </div>
 
-      <div className="Btn__quick-view"><button>
+      <div className="Btn__quick-view">
+        <Link to={`../products/${product.id}`}>
+        <button>
           Quick View
-        </button></div>
+        </button>
+        </Link>
+        </div>
+      
     </div>
   );
 };
 
 ProductCard.propTypes = {
   product: PropTypes.shape({
+    id:PropTypes.number.isRequired,
     title: PropTypes.string.isRequired,
     price: PropTypes.number.isRequired,
     image: PropTypes.string.isRequired,

@@ -3,7 +3,9 @@ const Filter = () => {
   return (
 
     <div className="Filter_container pt-3 pb-3">
-      <div className="category_header">
+      <div className="category_header" style={{
+        marginBottom:'2rem'
+      }}>
         <h1>
           {" "}
           <span>
@@ -223,7 +225,9 @@ const Filter = () => {
         </div>
 
         <div className="filter_5">
-          <button className="btn border-1 d-flex align-items-lg-baseline w-100 justify-content-center h-75 bg-primary"><i className='bx bx-reset' ></i> <p>Reset</p></button>
+          <button className="btn border-1 d-flex align-items-lg-baseline w-100 text-white justify-content-center" style={{
+            background:'#DB3327',
+          }}><i className='bx bx-reset' ></i> <p>Reset</p></button>
         </div>
       </div>
     </div>
