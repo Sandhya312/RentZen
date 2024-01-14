@@ -20,14 +20,14 @@ export class ItemsController {
   @Get('all')
   @HttpCode(200)
   async getAllItems(): Promise<any> {
-    return this.itemService.getAllItems();
+    return await this.itemService.getAllItems();
   }
 
   @Post('create')
   @HttpCode(201)
   @UsePipes(ValidationPipe)
   async createItem(@Body() createItemDto: CreateItemDto): Promise<string> {
-    return this.itemService.createItem(createItemDto);
+    return await this.itemService.createItem(createItemDto);
   }
 
   @Put('update')
@@ -37,6 +37,6 @@ export class ItemsController {
     @Body() updateItem: UpdateItemDto,
     @Query('id') itemID: string,
   ): Promise<string> {
-    return this.itemService.updateItem(itemID, updateItem);
+    return await this.itemService.updateItem(itemID, updateItem);
   }
 }

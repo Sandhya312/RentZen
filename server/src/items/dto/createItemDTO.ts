@@ -6,6 +6,7 @@ import {
   IsObject,
   ValidateNested,
   IsNumber,
+  IsBoolean,
 } from 'class-validator';
 import { Type } from 'class-transformer';
 
@@ -79,4 +80,8 @@ export class CreateItemDto {
   @ValidateNested()
   @Type(() => CostDto)
   cost: CostDto;
+
+  @IsBoolean()
+  @IsNotEmpty()
+  available: boolean;
 }

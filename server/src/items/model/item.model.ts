@@ -48,6 +48,9 @@ export class item {
     time: string;
     value: number;
   };
+
+  @Prop({ required: true, default: true })
+  available: boolean;
 }
 
 export const itemSchema = SchemaFactory.createForClass(item);
