@@ -84,4 +84,5 @@ export class CreateItemDto {
   @IsBoolean()
   @IsNotEmpty()
   available: boolean;
+
 }

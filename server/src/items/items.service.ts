@@ -59,5 +59,4 @@ export class ItemsService {
     } catch (error) {
       throw new NotFoundException('No items found and ', error);
     }
-  }
 }
